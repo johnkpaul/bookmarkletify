@@ -2,7 +2,7 @@
   "name": "bookmarkletify",
   "version": "0.0.1",
   "description": "From a single javascript file, create a bookmarklet",
-  "main": "index.js",
+  "main": "bookmarkletify.js",
   "scripts": {
     "test": "vows test/test.js"
   },
@@ -15,7 +15,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/johnkpaul/bookmarkletify.git"
-  }
+  },
   "dependencies": {
     "vows": "~0.6.4",
     "uglify-js": "~1.3.4"
