@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+
+var nomnom = require('nomnom')
+var cli = require('./cli')
+
+var opts = nomnom
+  .script("bookmarkletify")
+  .options({
+    infile:{
+      required: true,
+      position: 0,
+      help: "js file to bookmarkletify"
+    },
+    outfile: {
+      abbr: 'o',
+      help: "Write the bookmarklet to this file.\nIf unspecified, prints to stdout."
+    }
+  })
+  .nocolors()
+  .nom()
+
+cli(opts)

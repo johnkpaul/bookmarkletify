@@ -2,10 +2,16 @@
 
 convert javascript source into the format needed for a bookmarklet
 
+## Usage
 
-# example
+As a **module**
 
-``` js
+```sh
+npm install bookmarkletify
+
+```
+
+```js
 var bookmarkletify = require('bookmarkletify');
 var source = 'alert( window.location    )';
 var bookmarkletString = bookmarkletify(source);
@@ -13,14 +19,14 @@ var bookmarkletString = bookmarkletify(source);
 console.log(bookmarkletString); //javascript:(function(){;alert(window.location);})()
 ```
 
-# install
+or as a **command line tool**
 
-With [npm](https://npmjs.org) do:
+```sh
+npm install -g bookmarkletify
+bookmarkletify input.js -o output.bookmarklet
 
 ```
-npm install bookmarkletify
-```
 
-# license
+## license
 
 MIT

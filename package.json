@@ -3,21 +3,31 @@
   "version": "0.0.1",
   "description": "From a single javascript file, create a bookmarklet",
   "main": "bookmarkletify.js",
-  "scripts": {
-    "test": "vows test/test.js"
+  "bin": {
+    "bookmarkletify": "bin/bookmarkletify"
   },
-  "repository": "",
-  "author": "John K. Paul <john@johnkpaul.com> (http://twitter.com/johnkpaul)",
-  "license": "MIT",
-  "keywords": [
-    "bookmarklet"
-  ],
+  "scripts": {
+    "test": "vows test/test*"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/johnkpaul/bookmarkletify.git"
   },
+  "author": "John K. Paul <john@johnkpaul.com> (http://twitter.com/johnkpaul)",
+  "contributors": [
+    "Oli Evans <oli@tableflip.io> (http://twitter.com/olizilla)"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "bookmarklet"
+  ],
   "dependencies": {
-    "vows": "~0.6.4",
-    "uglify-js": "~1.3.4"
+    "concat-stream": "^1.4.7",
+    "nomnom": "^1.8.1",
+    "uglify-js": "~1.3.4",
+    "vows": "~0.6.4"
+  },
+  "devDependencies": {
+    "vows": "^0.8.1"
   }
 }
