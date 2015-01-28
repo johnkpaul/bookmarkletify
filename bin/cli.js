@@ -5,7 +5,7 @@ var bookmarkletify = require('../bookmarkletify')
 
 module.exports = function (opts, cb) {
   cb = cb || function () {}
-  var input = fs.createReadStream(opts.infile)
+  var input = opts.infile ? fs.createReadStream(opts.infile) : process.stdin
   var output = opts.outfile ? fs.createWriteStream(opts.outfile) : process.stdout
   input.on('error', boom)
   output.on('error', boom)

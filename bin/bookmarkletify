@@ -7,7 +7,6 @@ var opts = nomnom
   .script("bookmarkletify")
   .options({
     infile:{
-      required: true,
       position: 0,
       help: "js file to bookmarkletify"
     },
